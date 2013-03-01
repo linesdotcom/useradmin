@@ -101,7 +101,6 @@ class Useradmin_Auth_ORM extends Kohana_Auth_ORM implements Useradmin_Driver_iAu
 		catch (ORM_Validation_Exception $e) 
 		{
 			throw $e;
-			return FALSE;
 		}
 		return TRUE;
 	}
