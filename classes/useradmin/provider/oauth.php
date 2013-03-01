@@ -14,8 +14,6 @@ abstract class Useradmin_Provider_OAuth extends Provider {
 	 */
 	protected $provider;
 
-	protected $provider_name;
-
 	/**
 	 * Privately used for OAuth requests
 	 * @var OAuth_Consumer

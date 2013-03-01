@@ -21,6 +21,8 @@ class Useradmin_Provider_Facebook extends Provider {
 			'secret' => Kohana::$config->load('facebook')->secret,
 			'cookie' => true // enable optional cookie support
 		));
+
+		$this->provider_name = 'facebook';
 	}
 
 	/**

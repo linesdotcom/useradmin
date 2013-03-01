@@ -12,8 +12,6 @@ class Useradmin_Provider_OpenID extends Provider {
 
 	private $provider = null;
 
-	private $provider_name = '';
-
 	private $uid = null;
 
 	private $data = null;
