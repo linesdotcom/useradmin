@@ -4,7 +4,7 @@
  * Oauth 1.0 using Kohana's bundled OAuth module.
  *
  * Kohana's bundled OAuth module supports Twitter (and Google) as providers.
- * 
+ *
  */
 abstract class Useradmin_Provider_OAuth extends Provider {
 
@@ -13,8 +13,6 @@ abstract class Useradmin_Provider_OAuth extends Provider {
 	 * @var OAuth_Provider
 	 */
 	protected $provider;
-
-	protected $provider_name;
 
 	/**
 	 * Privately used for OAuth requests

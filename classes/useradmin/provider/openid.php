@@ -6,13 +6,11 @@
 class Useradmin_Provider_OpenID extends Provider {
 
 	protected static $config = array(
-		'google' => array('url' => 'https://www.google.com/accounts/o8/id'), 
+		'google' => array('url' => 'https://www.google.com/accounts/o8/id'),
 		'yahoo' => array('url' => 'https://me.yahoo.com/')
 	);
 
 	private $provider = null;
-
-	private $provider_name = '';
 
 	private $uid = null;
 
@@ -37,9 +35,9 @@ class Useradmin_Provider_OpenID extends Provider {
 		$this->provider->identity  = Provider_OpenID::$config[$this->provider_name]['url'];
 		$this->provider->returnUrl = URL::site($return_url, true);
 		$this->provider->required  = array(
-			'namePerson', 
-			'namePerson/first', 
-			'namePerson/last', 
+			'namePerson',
+			'namePerson/first',
+			'namePerson/last',
 			'contact/email'
 		);
 		return $this->provider->authUrl();

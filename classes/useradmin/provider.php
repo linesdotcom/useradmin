@@ -3,6 +3,11 @@
 abstract class Useradmin_Provider {
 
 	/**
+	 * @var  string  Provider name
+	 */
+	protected $provider_name = NULL;
+
+	/**
 	 * Create a provider.
 	 * @param string $provider_name
 	 * @return Provider
@@ -30,6 +35,16 @@ abstract class Useradmin_Provider {
 			}
 		}
 		return $provider;
+	}
+
+	/**
+	 * Returns provider name
+	 *
+	 * @return  string
+	 */
+	public function provider_name()
+	{
+		return $this->provider_name;
 	}
 
 	/**
